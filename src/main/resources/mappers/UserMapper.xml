@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+    <resultMap id="userMap" type="com.entity.User">
+        <result column="id" property="id"></result>
+        <result column="username" property="username"></result>
+        <result column="password" property="password"></result>
+        <result column="status" property="status"></result>
+        <result column="email" property="email"></result>
+        <result column="phone" property="phone"></result>
+        <result column="name" property="name"></result>
+        <result column="salt" property="salt"></result>
+    </resultMap>
+
+    <select id="selectByUserName" resultMap="userMap">
+		SELECT id,username,PASSWORD,email,phone,NAME,STATUS,salt FROM user WHERE username=#{username}
+	</select>
+</mapper>

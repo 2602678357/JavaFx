@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="bootstrapfx-core-0.2.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/bootstrapfx-core-0.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/json-jena-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/Msc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
